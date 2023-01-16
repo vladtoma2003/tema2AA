@@ -134,4 +134,13 @@ public class OracleStuff extends Task {
         }
         System.out.println();
     }
+
+    public void setArrays(ArrayList<Integer> dataSize, ArrayList<ArrayList<Integer>> values) {
+        n = dataSize.get(0);
+        m = dataSize.get(1);
+        k = dataSize.get(2);
+
+        clau = values;
+
+    }
 }
