@@ -11,7 +11,7 @@ run_redemption:
 
 trial: Trial.java Task.java
 	javac $^
-
+#
 rise: Rise.java Task.java
 	javac $^
 
