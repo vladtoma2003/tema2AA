@@ -113,7 +113,6 @@ public class OracleStuff extends Task {
             gogu = stringTokenizer.nextToken();
             int nrGogu = Integer.parseInt(gogu);
             if (nrGogu > 0) {
-//                System.out.println(nrGogu);
                 ref.add((nrGogu % m) != 0 ? nrGogu % m : ((nrGogu < n) ? nrGogu : m));
             }
         }

@@ -86,18 +86,10 @@ public class RiseStuff extends Task {
                         map.putIfAbsent(currentCard, value);
                         ++value;
                     }
-//                    System.out.println(value);
                 }
             }
         }
         maxValue = value - 1; // n in output
-
-//        System.out.println(ownedCards);
-//        System.out.println(desiredCards);
-//        for (int i = 0; i < p; ++i) {
-//            System.out.println(decks.get(i));
-//        }
-
         bf.close();
     }
 
@@ -108,14 +100,12 @@ public class RiseStuff extends Task {
 
         dataSize.add(maxValue);
         dataSize.add(decksNo);
-//        System.out.println(dataSize);
         for (int i = 0; i < decksNo; ++i) {
             codedValues.add(new ArrayList<>());
             codedValues.get(i).add(decks.get(i).size());
             for (String card : decks.get(i)) {
                 codedValues.get(i).add(map.get(card));
             }
-//            System.out.println(codedValues.get(i));
         }
 
     }
